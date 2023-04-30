@@ -1,0 +1,119 @@
+.detail {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid #92320c 0.1rem;
+  padding-bottom: 1rem;
+}
+.priceandamount {
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: -0.5rem;
+}
+.priceandamount p {
+  color: #92320c;
+  font-weight: 600;
+}
+.priceandamount button {
+  margin-left: 2.2rem;
+  color: black !important;
+  height: 2rem;
+  width: 2.6rem;
+  border: solid 0.1rem rgb(210, 209, 209);
+  border-radius: 0.4rem;
+  margin-top: 0.8rem;
+  font-weight: 500;
+  background-color: white;
+}
+.upanddown button {
+  color: #92320c;
+  background-color: white;
+  height: 2rem;
+  width: 2.6rem;
+  border: solid 0.09rem #92320c;
+  border-radius: 0.4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.upanddown {
+  margin-top: 2.5rem;
+}
+.btnup {
+  margin-right: 0.5rem;
+}
+.totalamountdiv {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.closeandorder {
+  text-align: right;
+  margin-top: -0.5rem;
+}
+.closebtn {
+  background-color: white;
+  color: #92320c;
+  border: 0.09rem solid #92320c;
+  font-weight: 500;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  border-radius: 10rem;
+  margin-right: 0.8rem;
+}
+.orderbtn {
+  background-color: #92320c;
+  color: white;
+  border: 0.09rem solid #92320c;
+  font-weight: 500;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  border-radius: 10rem;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 20vh;
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  z-index: 30;
+  animation: slide-down 300ms ease-out forwards;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    width: 40rem;
+    left: calc(50% - 20rem);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
